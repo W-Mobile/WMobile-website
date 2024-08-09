@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Lukas",
+        "imageSource": "./assets/images/lukas.jpg",
+        "role": "CEO, Partner & Developer",
+        "description": "15 years experience of back-end and app development (Android and IOS)"
+    },
+    {
+        "name": "Jim",
+        "imageSource": "./assets/images/jim.png",
+        "role": "Partner & Developer",
+        "description": "6 years experience of app development (Flutter, IOS and Xamarin)"
+    },  {
+        "name": "Alexander",
+        "imageSource": "./assets/images/alex.jpg",
+        "role": "Developer",
+        "description": "4 years experience of app development (Flutter & IOS)"
+    },
+    {
+        "name": "Andreas",
+        "imageSource": "./assets/images/andreas.jpg",
+        "role": "Developer",
+        "description": "9 years experience of back-end and app development (Flutter)"
+    },
+    {
+        "name": "Tasdi",
+        "imageSource": "./assets/images/tasdi.jpeg",
+        "role": "Developer",
+        "description": "5 years experience of app development (Android)"
+    },
+    {
+        "name": "Sigge",
+        "imageSource": "./assets/images/sigge.jpg",
+        "role": "Mood manager",
+        "description": "3 years experience of providing emotional support and good vibes"
+    }
+]

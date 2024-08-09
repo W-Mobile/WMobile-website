@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Remondis Beställning",
+        "about": "We explored the user journey within Remondis' process and IT infrastructure to craft the most efficient solution. The outcome was the Remondis App, a user-friendly tool that places essential customer information at your fingertips. With its intuitive ordering feature, it's as simple as a tap of your left thumb – order from anywhere, anytime.",
+        "imageSrc": "./assets/images/Remondiscaseimage.jpg",
+        "techStack": [
+           "Flutter", "Dart"
+        ]
+    },
+    {
+        "name": "Volvo Service App",
+        "about": "In close collaboration with Volvo Car Sweden and Apple, alongside a design bureau and an innovation team, we successfully crafted a mobile app and smart watch solution, built for Apple devices. This solution brings together various complex back end applications into an intuitive, user friendly app. It empowers mobile work, provides instant access to essential information and notifications at the user’s fingertips. Learn more at https://www.apple.com/se/business/enterprise/success-stories/manufacturing/volvo/",
+        "imageSrc": "./assets/images/serviceapp.png",
+        "techStack": [
+           "Swift", "UIKit", "SwiftUI", "WatchOS"
+        ]
+    },
+    {
+        "name": "Göteborg Energi",
+        "about": "Göteborg Energi aimed to empower their customers with greater awareness of their energy usage and costs. Partnering with them and the digital agency Welcom, we developed a user-friendly app designed to put users at the center. This app provides intuitive visualizations of energy consumption, enabling users to make smart, informed decisions with ease. Now, all Göteborg Energi's electricity trading and grid customers can enjoy the benefits of this practical and effective app.",
+        "imageSrc": "./assets/images/goteborgenergi.jpg",
+        "techStack": [
+           "Flutter", "Dart", "GraphQl"
+        ]
+    }
+]

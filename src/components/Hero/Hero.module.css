@@ -1,0 +1,82 @@
+@import '../../vars.css';
+@import '../../index.css';
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* height: 100vh; */
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+}
+
+.title {
+    font-family: PPFragment;
+    font-size: 72px;
+    font-weight: 900;
+    margin-bottom: 33px;
+    background: linear-gradient(90deg,
+     rgba(255,255,255,1) 70%,
+      rgba(255, 255, 255, 0) 120%);
+      background-clip: inherit;
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text; 
+}
+
+.description {
+    font-size: 30px;
+    margin-bottom: 52px;
+    font-family: PPNeueMachina;
+}
+
+.heroImg {
+    width: 20%;
+    z-index: 1;
+}
+
+.topBlur {
+position: absolute;
+width: 50vw;
+height: 50vw;
+min-width: 350px;
+min-width: 350px;
+top: -128px;
+left: -10vw;
+border-radius: 764px;
+background: rgba(190,192,198,0.7);
+filter: blur(100px);
+z-index: 0;
+}
+
+.bottomBlur {
+    position: absolute;
+    width: 70vw;
+    height: 50vw;
+    min-width: 350px;
+    min-width: 250px;
+    top: 246px;
+    right: -25vw;
+    border-radius: 764px;
+    background: rgba(190,192,198,0.7);
+    filter: blur(100px);
+    z-index: 0;
+    }
+    
+@media screen and (max-width: 830px) {
+    .container {
+        flex-direction: column-reverse;
+    }
+    .content {
+        align-items: center;
+    }
+}
