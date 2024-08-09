@@ -18,7 +18,7 @@ const About = () => {
     alt="Blur guy image"
      />
        <p className={styles.description}>
-  We work with an ever growing network of forward thinking developers and designers from all around the world. We are always on demand to recruit new talent of creatives and wizards. Email us your cover letter and CV to careers@workmobile.se. 
+       We collaborate with a diverse network of innovative developers and designers from across the globe. We're always looking to bring in new talent. If you're interested in joining our team, please send your cover letter and CV to careers@workmobile.se.
   </p>
     </div>
     </Fade>
