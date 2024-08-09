@@ -18,7 +18,7 @@ const About = () => {
     alt="Blur guy image"
      />
        <p className={styles.description}>
-  We work with an ever growing network of forward thinking developers and designers from all around the world. We are always on demant to recruit new talent of creatives and wizards. Email us your cover letter and CV to careers@workmobile.se. 
+  We work with an ever growing network of forward thinking developers and designers from all around the world. We are always on demand to recruit new talent of creatives and wizards. Email us your cover letter and CV to careers@workmobile.se. 
   </p>
     </div>
     </Fade>
