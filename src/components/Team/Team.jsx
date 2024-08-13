@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from './Team.module.css';
 import Card from '../CustomCard';
-import teamMembers from '/Users/alexandergunnarsson/Desktop/Projects/Web/wmobile-webiste/src/data/team.json'
+import teamMembers from '../../data/team.json'
 import { Fade } from 'react-reveal';
 const Team = () => {
   return <div> 
