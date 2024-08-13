@@ -21,7 +21,7 @@ const Contact = () => {
         </li>
         <li className={styles.link}>
             <img className={styles.iconImg} src="./assets/images/phoneicon.svg" alt="Phone Icon" />
-            <p>+46 (0) 70 282 1800</p>
+            <p>0706 342 54 00</p>
         </li>
     </ul>
     </Fade>
