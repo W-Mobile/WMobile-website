@@ -29,6 +29,12 @@
         "description": "5 years experience of app development (Android)"
     },
     {
+        "name": "Emma",
+        "imageSource": "./assets/images/emma.jpeg",
+        "role": "Developer",
+        "description": "2.5 years experience of software development"
+    },
+    {
         "name": "Sigge",
         "imageSource": "./assets/images/sigge.jpg",
         "role": "Mood manager",
