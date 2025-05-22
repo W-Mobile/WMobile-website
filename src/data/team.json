@@ -10,11 +10,6 @@
         "imageSource": "./assets/images/jim.png",
         "role": "Partner & Developer",
         "description": "6 years experience of app development (Flutter, IOS and Xamarin)"
-    },  {
-        "name": "Alexander",
-        "imageSource": "./assets/images/alex.jpg",
-        "role": "Developer",
-        "description": "4 years experience of app development (Flutter & IOS)"
     },
     {
         "name": "Andreas",
@@ -33,11 +28,5 @@
         "imageSource": "./assets/images/emma.jpeg",
         "role": "Developer",
         "description": "2.5 years experience of software development"
-    },
-    {
-        "name": "Sigge",
-        "imageSource": "./assets/images/sigge.jpg",
-        "role": "Mood manager",
-        "description": "3 years experience of providing emotional support and good vibes"
     }
 ]
