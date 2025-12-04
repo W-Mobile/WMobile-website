@@ -5,62 +5,83 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 61px;
+  padding-top: clamp(32px, 6vw, 61px);
   z-index: 2;
-  margin: 0 10%;
+  margin: 0 max(5%, 16px);
 }
 
 .title {
   font-family: PPFragment;
-  font-size: 40px;
+  font-size: clamp(2rem, 4vw, 2.5rem);
   font-weight: 600;
   text-decoration: none;
   color: var(--color-text);
+  line-height: 1.2;
 }
 
 .menuBtn {
   display: none;
+  width: 44px;
+  height: 44px;
+  padding: 8px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  -webkit-tap-highlight-color: rgba(190, 192, 198, 0.3);
+}
+
+.menuBtn img {
+  width: 100%;
+  height: 100%;
 }
 
 .menu {
   display: flex;
-
 }
+
 .menuItems {
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  gap: 47px;
+  gap: clamp(24px, 4vw, 47px);
   list-style: none;
 }
+
 .menuItems a {
-  font-size: 25px;
+  font-size: clamp(1.125rem, 2vw, 1.5625rem);
   color: var(--color-text);
   text-decoration: none;
+  padding: 8px 12px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  -webkit-tap-highlight-color: rgba(190, 192, 198, 0.3);
 }
 
 .menuItems a:hover {
     color: grey;
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: all 0.3s ease;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1024px) {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    margin: 0 max(4%, 16px);
   }
+
   .menu {
     position: absolute;
     right: 0;
-    margin-right: 10%;
+    margin-right: max(4%, 16px);
     flex-direction: column;
     align-items: flex-end;
-    gap: 11px;
+    gap: 12px;
     z-index: 3;
   }
+
   .menuBtn {
     display: block;
-    cursor: pointer;
   }
 
   .menuItems {
@@ -68,19 +89,40 @@
     display: none;
     flex-direction: column;
     align-items: center;
-    gap: 13px;
+    gap: 8px;
     border-radius: 10px;
-    background: rgb(25, 55, 109);
     background: linear-gradient(
       0deg,
       rgba(190,192,198,0.2) 0%,
       rgba(190,192,198,1) 100%);
-    padding: 24px 33px;
+    padding: 16px 24px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    min-width: 160px;
+  }
+
+  .menuItems a {
+    width: 100%;
+    text-align: center;
+    padding: 12px 16px;
+    justify-content: center;
   }
 
   .menuOpen {
     display: flex;
     z-index: 1;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .navbar {
+    margin: 0 16px;
+  }
+
+  .menu {
+    margin-right: 16px;
+  }
+
+  .menuItems {
+    min-width: 140px;
   }
 }

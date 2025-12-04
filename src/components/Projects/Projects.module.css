@@ -1,27 +1,37 @@
 @import '../../vars.css';
 
 .container {
-    margin-top: 12rem;
+    margin-top: clamp(64px, 12vw, 12rem);
     color: var(--color-text);
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: max(4%, 16px);
+    margin-right: max(4%, 16px);
 }
 
 .title {
     font-family: PPFragment;
-    font-size: 35px;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
     font-weight: 700;
-    letter-spacing: 1.75;
-    /* text-transform: uppercase; */
+    letter-spacing: 1.75px;
 }
 
 .projects {
-    margin-top: 37px;
+    margin-top: clamp(24px, 4vw, 37px);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: 15px;
-    width: 100%
+    gap: clamp(16px, 2vw, 24px);
+    width: 100%;
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .projects {
+        gap: 16px;
+    }
 }

@@ -7,8 +7,8 @@ const Hero = () => {
     <section className={styles.container}>
      <Fade down distance='10%' duration={1500}>
     <div className={styles.content}>
-     <h1 className={styles.title}>Powering enterprise retail through simplicity</h1>
-     <p className={styles.description}>WorkMobile is an app development studio on a mission to create a better and everyday user experience and interfaces for business processes, staff productivity and customer engagement.</p>
+     <h1 className={styles.title}>From complex systems to simple taps</h1>
+     <p className={styles.description}>We transform enterprise processes into mobile experiences that empower your mobile workforce.</p>
     </div>
     <img src="./assets/images/wmobile-logo-icon-white.png" alt="Hero WMobile logo" className={styles.heroImg} />
     <div className={styles.topBlur}/>
