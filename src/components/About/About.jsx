@@ -13,7 +13,7 @@ const About = () => {
           <div className={styles.aboutItem}>
             <div className={styles.aboutItemText}>
               <h3>Value-Driven Solutions</h3>
-              <p>We don't just build apps—we solve business challenges. Every solution we create is designed to deliver measurable value for your organization and the people who use it daily.</p>
+              <p>By focusing on your specific business goals, we develop mobile solutions that go beyond code to create real, measurable impact for your entire organization.</p>
             </div>
           </div>
           <div className={styles.aboutItem}>
