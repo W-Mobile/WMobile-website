@@ -3,30 +3,30 @@
         "name": "Lukas",
         "imageSource": "./assets/images/lukas.jpg",
         "role": "CEO, Partner & Developer",
-        "description": "15 years experience of back-end and app development (Android and IOS)"
+        "description": "16 years of expertise in back-end architecture and native app development for iOS and Android, delivering robust and high-performance mobile solutions."
     },
     {
         "name": "Jim",
         "imageSource": "./assets/images/jim.png",
         "role": "Partner & Developer",
-        "description": "6 years experience of app development (Flutter, IOS and Xamarin)"
+        "description": "7 years of experience in app development across Flutter, iOS, and Xamarin, recently expanding into project management and business development"
     },
     {
         "name": "Andreas",
         "imageSource": "./assets/images/andreas.jpg",
         "role": "Developer",
-        "description": "9 years experience of back-end and app development (Flutter)"
+        "description": "10 years of experience in back-end architecture and mobile app development, with a specialized focus on building high-performance, scalable solutions using Flutter."
     },
     {
         "name": "Tasdi",
         "imageSource": "./assets/images/tasdi.jpeg",
         "role": "Developer",
-        "description": "5 years experience of app development (Android)"
+        "description": "6 years of experience in mobile development with a specialization in Android, complemented by a background in native iOS, Flutter, and React Native."
     },
     {
         "name": "Emma",
         "imageSource": "./assets/images/emma.jpeg",
         "role": "Developer",
-        "description": "2.5 years experience of software development"
+        "description": "3.5 years of experience in software development with a passion for UI/UX, combining technical expertise with a keen eye for design to create intuitive user experiences."
     }
 ]

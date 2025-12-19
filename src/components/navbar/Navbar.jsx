@@ -5,19 +5,20 @@ import { Fade } from 'react-reveal';
 function Navbar () {
 const [menuOpen, setMenuOpen] = useState(false);
 
-    return (      
+    return (
         <div>
             <Fade down distance='10%' duration={1500}>
         <nav className={styles.navbar}>
-            
+
             <a className={styles.title} href="/">WorkMobile</a>
-            
+
             <div className={styles.menu}>
                    <div className={styles.menuBtn}>
                     <img src={menuOpen ? "./assets/images/closeIcon.png" : "./assets/images/menuIcon.png" }
                      alt="menu-button"
                       onClick={() => setMenuOpen(!menuOpen)}/>
                 </div>
+                {menuOpen && <div className={styles.backdrop} onClick={() => setMenuOpen(false)}></div>}
                 <ul className={`${styles.menuItems} ${menuOpen && styles.menuOpen}`} onClick={() => setMenuOpen(false)}>
                     <li>
                         <a href="#about">About</a>

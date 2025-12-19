@@ -1,26 +1,71 @@
 [
     {
         "name": "Remondis Beställning",
-        "about": "We explored the user journey within Remondis' process and IT infrastructure to craft the most efficient solution. The outcome was the Remondis App, a user-friendly tool that places essential customer information at your fingertips. With its intuitive ordering feature, it's as simple as a tap of your left thumb – order from anywhere, anytime.",
-        "imageSrc": "./assets/images/Remondiscaseimage.jpg",
+        "challenge": "Customers previously faced significant friction due to a fragmented ordering process that required navigating multiple, disconnected systems. This complexity often led to user frustration, abandoned orders, and a heavy reliance on manual support to bridge the gaps between platforms. Without a unified interface, the ordering journey felt inconsistent and prevented customers from completing transactions quickly and efficiently.",
+        "solution": "We developed an intuitive mobile application that consolidates the entire purchasing journey into a single, high-performance interface with one-tap ordering capabilities. By centralizing disparate systems into one mobile hub, the app allows users to place and track orders from anywhere without administrative hurdles. The solution simplifies the user path with smart defaults and a streamlined checkout process, ensuring a frictionless experience from initial selection to final confirmation.",
+        "impact": "The new mobile approach has fundamentally streamlined customer service by empowering users to manage their own orders in real time. By reducing the complexity of the transaction, the business has seen a marked decrease in order-related friction and a significant improvement in overall operational agility. Customers now enjoy a faster, more transparent buying experience, which has strengthened brand loyalty and increased total order volume.",
+        "imageSrc": "./assets/images/projects/project-remondis.png",
         "techStack": [
-           "Flutter", "Dart"
+            "Flutter",
+            "Dart"
         ]
     },
     {
         "name": "Volvo Service App",
-        "about": "In close collaboration with Volvo Car Sweden and Apple, alongside a design bureau and an innovation team, we successfully crafted a mobile app and smart watch solution, built for Apple devices. This solution brings together various complex back end applications into an intuitive, user friendly app. It empowers mobile work, provides instant access to essential information and notifications at the user’s fingertips. Learn more at https://www.apple.com/se/business/enterprise/success-stories/manufacturing/volvo/",
-        "imageSrc": "./assets/images/serviceapp.png",
+        "challenge": "Volvo Car's close partnership and collaborative business development with dealers created a need for enhancing efficiency and creating a more appealing workplace for service technicians.",
+        "solution": "In close collaboration with Apple, alongside a design bureau and an innovation team, we successfully created a mobile app and smart watch solution, built on the foundation of Apple iOS devices. This solution brings together various complex back-end applications into an intuitive, user-friendly app. It empowers mobile work, provides instant access to essential information and notifications at the user's fingertips.",
+        "impact": "The transition to mobile workflows has delivered a significant daily reduction in workload by eliminating time-consuming desktop administration for service staff. New service technicians can now be onboarded much faster thanks to intuitive, digital checklists that standardize complex procedures. Furthermore, the solution has transformed the customer experience through automated arrival alerts and a structured follow-up process, leading to a measurable increase in overall end-customer satisfaction.",
+        "imageSrc": "./assets/images/projects/project-volvo-service.png",
         "techStack": [
-           "Swift", "UIKit", "SwiftUI", "WatchOS"
+            "Swift",
+            "UIKit",
+            "SwiftUI",
+            "WatchOS"
         ]
     },
     {
         "name": "Göteborg Energi",
-        "about": "Göteborg Energi aimed to empower their customers with greater awareness of their energy usage and costs. Partnering with them and the digital agency Welcom, we developed a user-friendly app designed to put users at the center. This app provides intuitive visualizations of energy consumption, enabling users to make smart, informed decisions with ease. Now, all Göteborg Energi's electricity trading and grid customers can enjoy the benefits of this practical and effective app.",
-        "imageSrc": "./assets/images/goteborgenergi.jpg",
+        "challenge": "Modern energy consumers often struggle to navigate complex billing cycles and volatile market prices without clear, real-time data. Without accessible insights, it is difficult for households to identify which appliances drive high costs or how to shift consumption to more affordable hours. This lack of transparency leads to \"bill shock\" and prevents customers from taking proactive control over their environmental footprint and household budget.",
+        "solution": "We developed a sophisticated mobile experience that transforms raw meter data into actionable, personalized energy intelligence. The app centralizes real-time consumption tracking and smart notifications. By integrating advanced visualizations, the platform empowers users to understand their energy habits and be aware of smarter consumption choices directly from their smartphones.",
+        "impact": "The app has fundamentally shifted the relationship between the utility provider and the consumer, resulting in higher engagement and a measurable reduction in support inquiries. Customers report greater confidence in managing their monthly expenses and a deeper understanding of how their behavior impacts their total costs. With clearer visibility into their usage patterns, users are now successfully optimizing their energy consumption, leading to both lower bills and a more sustainable lifestyle.",
+        "imageSrc": "./assets/images/projects/project-goteborg-energi.png",
         "techStack": [
-           "Flutter", "Dart", "GraphQl"
+            "Flutter",
+            "Dart",
+            "GraphQl"
+        ]
+    },
+    {
+        "name": "Wayke",
+        "challenge": "Modern car buyers and sellers demand a digital-first marketplace that offers a seamless transition between web browsing and mobile interaction. Relying on fragmented communication like phone calls and emails often leads to slow response times and a disconnected experience for both consumers and professional dealers. To stay competitive, the marketplace needed a unified platform that bridges the gap between high-quality leads and efficient dealer communication.",
+        "solution": "The Wayke Marketplace app serves as a mobile extension of wayke.se, providing a streamlined environment for browsing dealer-listed vehicles and managing transactions. Users can easily contact dealers, initiate real-time chats, or list their own vehicles for sale to receive direct offers from professionals. By centralizing these interactions within a dedicated app, the solution ensures that every stage of the buying and selling process is mobile-optimized and user-friendly.",
+        "impact": "This digital-first approach delivers a more engaging consumer experience while providing dealers with higher-quality, actionable leads. In-app chat fosters faster, more transparent communication, significantly reducing the friction typically found in traditional car sales. Ultimately, the app strengthens the connection between supply and demand, creating a trusted ecosystem where both dealers and consumers can interact with confidence.",
+        "imageSrc": "./assets/images/projects/project-wayke-consument.png",
+        "techStack": [
+            "Flutter",
+            "Dart"
+        ]
+    },
+    {
+        "name": "Wayke Dealer",
+        "challenge": "Car dealers perform their most critical work away from the desk—on the lot, in the showroom, or directly with customers. Relying on desktop-bound systems for these tasks causes delays, forces repetitive manual data entry, and slows down lead response times. Without a mobile solution, dealers struggle to maintain efficiency while balancing physical site management and digital administrative needs.",
+        "solution": "Wayke Dealer serves as a powerful mobile extension of the desktop platform, specifically built for on-site dealership workflows. The app enables staff to instantly scan registration plates for valuations, perform vehicle reception checks, and capture ad photos directly from the car. Real-time push notifications also ensure that dealers can respond to new leads immediately, regardless of where they are on the premises.",
+        "impact": "Moving core tasks to a mobile environment eliminates double work and significantly reduces manual administration between systems. On-site scanning and structured checklists ensure higher data quality, while instant lead alerts lead to faster customer engagement. The result is a more professional customer experience with quicker valuations and a much more agile sales team.",
+        "imageSrc": "./assets/images/projects/project-wayke-dealer.png",
+        "techStack": [
+            "Flutter",
+            "Dart"
+        ]
+    },
+    {
+        "name": "Wayke Operations",
+        "challenge": "Dealers face significant delays when preparing acquired cars for resale because desktop-bound systems force shop floor employees away from their work. This lack of mobility creates communication gaps, leading to missed updates and a slower time-to-sale. Without a flexible way to manage tasks on-site, the entire preparation process becomes fragmented and inefficient.",
+        "solution": "Wayke Operations is a mobile-first platform designed to manage work orders directly from the vehicle rather than a desk. Employees can instantly book time slots, update statuses, and upload documentation like photos or notes while on the move. Integrated push notifications ensure that every team member is alerted the moment a task is ready, streamlining coordination across all dealership roles.",
+        "impact": "By moving workflows to mobile, dealerships drastically shorten lead times from acquisition to sale. Real-time documentation and instant updates provide total visibility and ownership of tasks across the entire organization. This increased efficiency eliminates administrative bottlenecks and ensures every vehicle is showroom-ready in record time.",
+        "imageSrc": "./assets/images/projects/project-wayke-iordning.png",
+        "techStack": [
+            "Flutter",
+            "Dart"
         ]
     }
 ]

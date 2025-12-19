@@ -8,6 +8,18 @@
     overflow: hidden;
     border: 4px solid #fff;
     border-radius: 20px;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+
+  .card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Active state for mobile tap */
+  .card.active .card-body {
+    right: 0;
   }
   
   .card-img {
@@ -23,18 +35,35 @@
     top: 0;
     right: -100%;
     position: absolute;
-    background: #1f3d4722;
-    backdrop-filter: blur(5px);
+    background: rgba(31, 61, 71, 0.92);
+    backdrop-filter: blur(8px);
     border-radius: 16px;
     color: white;
-    /* padding: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: 0.5s;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   }
   .card:hover .card-body {
     right: 0;
+  }
+
+  /* Mobile-specific interactions */
+  @media (hover: none) and (pointer: coarse) {
+    .card {
+      cursor: default;
+    }
+
+    /* Only show on tap, not hover on mobile */
+    .card:hover {
+      transform: none;
+      box-shadow: none;
+    }
+
+    .card.active {
+      transform: scale(1.02);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
   }
 
   .card-title {
@@ -59,10 +88,11 @@
     font-family: PPNeueMachina;
     /* text-transform: capitalize; */
     font-size: 20px;
-    line-height: 25px;
+    line-height: 28px;
     margin: 35px 0;
-    font-weight: 300;
+    font-weight: 400;
     padding-left: 10px;
+    padding-right: 10px;
   }
 
   

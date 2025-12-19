@@ -1,37 +1,59 @@
 @import '../../vars.css';
 
 .container {
-    margin-top: clamp(64px, 12vw, 12rem);
-    color: var(--color-text);
+    position: relative;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    padding: clamp(16px, 5vw, 73px);
+    margin-top: clamp(64px, 12vw, 192px);
+    z-index: 1;
     margin-left: max(4%, 16px);
     margin-right: max(4%, 16px);
 }
 
 .title {
     font-family: PPFragment;
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    color: var(--color-text);
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     letter-spacing: 1.75px;
+    text-align: center;
 }
 
 .projects {
-    margin-top: clamp(24px, 4vw, 37px);
+    margin-top: 32px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    gap: clamp(16px, 2vw, 24px);
+    gap: clamp(24px, 3vw, 40px);
     width: 100%;
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media screen and (max-width: 480px) {
     .container {
-        margin-left: 16px;
-        margin-right: 16px;
+        margin-left: 4px;
+        margin-right: 4px;
+        padding: 8px;
     }
 
     .projects {
         gap: 16px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .container {
+        margin-left: 8px;
+        margin-right: 8px;
+        padding: 12px;
+    }
+
+    .projects {
+        gap: 20px;
     }
 }

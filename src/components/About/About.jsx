@@ -8,18 +8,33 @@ const About = () => {
 
       <h2 className={styles.title}>About</h2>
       <div className={styles.content}>
-        <p className={styles.description}>
-          We develop mobile apps for mobile workforces at medium to large enterprises. From compliance management to real-time operations, we transform complex systems into intuitive mobile experiences that drive productivity, efficiency, and adoption. Our experience spans service industries, automotive, and beyond.
-        </p>
-      </div>
-      <div className={styles.imageContent}>
-        <img className={styles.aboutImg}
-          src="./assets/images/blurguystairs.jpg"
-          alt="Blur guy image"
-        />
-        <p className={styles.description}>
-          Our team brings decades of combined experience in mobile app development across iOS, Android, Flutter and React Native.
-        </p>
+
+        <div className={styles.aboutItems}>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutItemText}>
+              <h3>Value-Driven Solutions</h3>
+              <p>We don't just build apps—we solve business challenges. Every solution we create is designed to deliver measurable value for your organization and the people who use it daily.</p>
+            </div>
+          </div>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutItemText}>
+              <h3>Mobile Workforce Expertise</h3>
+              <p>Deep experience in field service, operations, and mobile scenarios. We understand the unique challenges of mobile workforces and design solutions that work in real-world conditions.</p>
+            </div>
+          </div>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutItemText}>
+              <h3>Enterprise Integration</h3>
+              <p>Seamless connection to your existing systems and workflows. We bridge complex backend infrastructure with intuitive mobile experiences that just work.</p>
+            </div>
+          </div>
+          <div className={styles.aboutItem}>
+            <div className={styles.aboutItemText}>
+              <h3>Built for Adoption</h3>
+              <p>Apps people actually want to use. We focus on user experience and practical design to ensure high adoption rates and lasting impact on your operations.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </Fade>
   </section>

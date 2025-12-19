@@ -1,8 +1,12 @@
 @import '../../vars.css';
 
 .container {
-    color: var(--color-text);
-    margin-top: clamp(48px, 8vw, 79px);
+    position: relative;
+    background-color: rgba(12, 12, 12, 0.6);
+    border-radius: 15px;
+    padding: clamp(16px, 5vw, 73px);
+    margin-top: clamp(64px, 12vw, 192px);
+    z-index: 1;
     margin-left: max(4%, 16px);
     margin-right: max(4%, 16px);
 }
@@ -10,17 +14,18 @@
 .title {
     font-family: PPFragment;
     color: var(--color-text);
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     letter-spacing: 1.75px;
     padding-bottom: clamp(16px, 3vw, 25px);
+    text-align: center;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-top: clamp(8px, 2vw, 14px);
+    margin-top: clamp(24px, 4vw, 40px);
 }
 
 .teamMembers {
@@ -29,6 +34,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    gap: clamp(16px, 2vw, 24px);
+    gap: clamp(24px, 3vw, 40px);
     width: 100%;
 }

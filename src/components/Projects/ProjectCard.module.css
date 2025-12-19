@@ -1,119 +1,305 @@
 @import '../../vars.css';
 
-.container {
+/* Clean separated card design */
+.card {
     position: relative;
-    width: 100%;
-    height: undefined;
-    aspect-ratio: 1;
-    padding-top: 56.25%; /* 16:9 Aspect Ratio */
-    border-radius: 12px;
-    overflow: hidden;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-  }
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: linear-gradient(to bottom,
-        rgba(0, 0, 0, 0.85) 0%,
-        rgba(0, 0, 0, 0.65) 50%,
-        rgba(0, 0, 0, 0.85) 100%);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 24px 24px 24px;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    max-width: 420px;
+    width: 100%;
 }
 
-.content {
-    max-width: 100%;
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+/* Image section - clean, no overlay */
+.imageWrapper {
+    width: 100%;
+    height: 280px;
     overflow: hidden;
+    background: #e8e8e8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover .image {
+    transform: scale(1.05);
+}
+
+/* Content section - clean white background */
+.contentWrapper {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
 .title {
     font-family: 'PPFragment', sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 12px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    color: #1a1a1a;
+    margin: 0;
+    line-height: 1.2;
 }
 
-.description {
+.tagline {
+    font-family: 'PPNeueMachina', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #666;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
     overflow: hidden;
-    text-overflow: ellipsis;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    position: relative;
+    cursor: pointer;
+    transition: color 0.2s ease;
 }
+
+.tagline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 1.6em;
+    background: linear-gradient(to bottom, transparent, #ffffff);
+    pointer-events: none;
+}
+
+.tagline:hover {
+    color: #333;
+}
+
+/* Tech stack badges */
 .techStack {
-    list-style: none;
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    align-self: flex-end;
 }
 
-.tech {
+.techBadge {
     font-family: 'PPNeueMachina', sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 500;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 4px 12px;
+    padding: 6px 14px;
+    background: #f5f5f5;
+    color: #333;
+    border-radius: 20px;
+    transition: background 0.2s ease;
+}
+
+.techBadge:hover {
+    background: #e8e8e8;
+}
+
+/* CTA Button */
+.ctaButton {
+    align-self: flex-start;
+    padding: 12px 24px;
+    background: #1a1a1a;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: 'PPFragment', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 4px;
+}
+
+.ctaButton:hover {
+    background: #333;
+    transform: translateX(4px);
+}
+
+.ctaButton:active {
+    transform: translateX(2px);
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 480px) {
+    .card {
+        max-width: 100%;
+        width: 100%;
+        margin: 0;
+    }
+
+    .imageWrapper {
+        height: 300px;
+    }
+
+    .contentWrapper {
+        padding: 24px;
+        gap: 20px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+
+    .tagline {
+        font-size: 14px;
+    }
+
+    .ctaButton {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .imageWrapper {
+        height: 320px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .card {
+        max-width: 420px;
+    }
+
+    .imageWrapper {
+        height: 340px;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .tagline {
+        font-size: 16px;
+    }
+}
+
+/* Slide-in Detail Overlay - Only triggered by clicking "View Project" */
+.detailOverlay {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(31, 61, 71, 0.92);
+    backdrop-filter: blur(8px);
     border-radius: 16px;
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 10;
+}
+
+/* Show overlay only on active state (when "View Project" is clicked) */
+.card.active .detailOverlay {
+    right: 0;
+}
+
+.detailContent {
+    height: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    overflow-y: auto;
+}
+
+.detailTitle {
+    font-family: 'PPFragment', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin: 0 0 24px 0;
+    line-height: 1.2;
+}
+
+.storySection {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+}
+
+.storyItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.label {
+    font-family: 'PPFragment', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.storyText {
+    font-family: 'PPNeueMachina', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.6;
+    margin: 0;
+}
+
+.detailTechStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.detailTechBadge {
+    font-family: 'PPNeueMachina', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 6px 14px;
+    background: rgba(255, 255, 255, 0.25);
     backdrop-filter: blur(4px);
+    color: white;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-@media (min-width: 640px) {
-
-    .container {
-        aspect-ratio: 16/9;
-        padding-top: 0;
-        height: auto;
+/* Mobile-specific adjustments */
+@media (hover: none) and (pointer: coarse) {
+    .detailContent {
+        padding: 24px;
     }
 
-    .title {
-        font-size: calc(1.5vw + 18px);
-        margin-bottom: 8px;
+    .detailTitle {
+        font-size: 24px;
+        margin-bottom: 20px;
     }
 
-    .description {
-        font-size: calc(0.8vw + 12px);
-        -webkit-line-clamp: 4; /* Allow one more line on mobile */
+    .storySection {
+        gap: 16px;
     }
 
-    .tech {
-        font-size: calc(0.6vw + 10px);
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 800px;
-        height: 450px;
-    }
-
-    .title {
-        font-size: 34px;
-    }
-
-    .description {
-        font-size: 18px;
-    }
-
-    .tech {
+    .storyText {
         font-size: 14px;
     }
 }

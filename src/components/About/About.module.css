@@ -5,7 +5,7 @@
     background-color: rgba(12, 12, 12, 0.6);
     border-radius: 15px;
     padding: clamp(16px, 5vw, 73px);
-    margin-top: clamp(64px, 10vw, 129px);
+    margin-top: clamp(64px, 12vw, 192px);
     z-index: 1;
     margin-left: max(4%, 16px);
     margin-right: max(4%, 16px);
@@ -14,9 +14,10 @@
 .title {
     font-family: PPFragment;
     color: var(--color-text);
-    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     letter-spacing: 1.75px;
+    text-align: center;
 }
 
 .description {
@@ -30,39 +31,47 @@
 
 .content {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-direction: column;
+    margin-top: clamp(2.5rem, 5vw, 4rem);
 }
 
 .aboutImg {
-    width: 100%;
-    height: 550px;
+    width: 45%;
+    min-width: 300px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
 }
 
 .aboutItems {
     color: var(--color-text);
-    display: flex;
-    flex-direction: column;
-    gap: clamp(24px, 5vw, 50px);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: clamp(20px, 3vw, 32px);
+    width: 100%;
 }
 
 .aboutItem {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    border-radius: 20px;
+    align-items: flex-start;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     list-style: none;
-    padding: clamp(16px, 3vw, 25px);
+    padding: clamp(20px, 3.5vw, 28px);
     background-image: linear-gradient(90deg,
             rgba(130, 130, 166, 0.42) 0%,
             rgba(255, 255, 255, 0) 100%);
     background-size: 0 100%;
     background-repeat: no-repeat;
-    transition: 0.4s;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: default;
 }
 
 .aboutItem:hover {
     background-size: 100% 100%;
+    transform: translateY(-3px);
 }
 
 .aboutItemImg {
@@ -71,15 +80,34 @@
     padding-right: 8px;
 }
 
+.aboutItemText {
+    flex: 1;
+}
+
 .aboutItem h3 {
-    font-size: clamp(1.125rem, 2vw, 1.5625rem);
+    font-family: PPFragment;
+    font-size: clamp(1.25rem, 2.2vw, 1.5rem);
     font-weight: 600;
-    line-height: 1.4;
+    line-height: 1.3;
+    margin-bottom: clamp(8px, 1.5vw, 12px);
+    color: var(--color-text);
 }
 
 .aboutItem p {
-    font-size: clamp(1rem, 2vw, 1.5625rem);
-    line-height: 1.5;
+    font-family: PPNeueMachina;
+    font-size: clamp(0.9375rem, 1.8vw, 1.125rem);
+    font-weight: 400;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Desktop & Tablet: 2-column grid */
+@media screen and (min-width: 768px) {
+    .aboutItems {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: clamp(24px, 3vw, 40px);
+        row-gap: clamp(20px, 3vw, 32px);
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -89,28 +117,37 @@
 
     .aboutImg {
         width: 100%;
-        height: clamp(250px, 40vw, 300px);
+        min-width: unset;
+        max-height: 400px;
+        object-fit: cover;
     }
 
     .aboutItems {
-        margin-top: 24px;
+        width: 100%;
+    }
+}
+
+/* Mobile: Single column */
+@media screen and (max-width: 767px) {
+    .aboutItems {
+        grid-template-columns: 1fr;
     }
 }
 
 @media screen and (max-width: 480px) {
     .aboutImg {
-        height: 200px;
+        max-height: 280px;
     }
 
     .aboutItem {
-        flex-direction: column;
-        align-items: flex-start;
-        text-align: left;
+        padding: clamp(16px, 4vw, 20px);
     }
 
-    .aboutItemImg {
-        width: 48px;
-        min-width: 48px;
-        margin-bottom: 12px;
+    .aboutItem h3 {
+        font-size: clamp(1rem, 4vw, 1.125rem);
+    }
+
+    .aboutItem p {
+        font-size: clamp(0.875rem, 3.5vw, 1rem);
     }
 }
